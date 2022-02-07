@@ -12,14 +12,17 @@ header {
 nav {
   background-color: aqua;
   width: 100%;
-  height: 3rem;
+  height: 3.5rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 nav > ul > li {
   align-items: center;
 }
-nav > ul > li > img {
-  width: 15%;
+nav > img {
+  width: 12%;
+  height: 80%;
+  margin-left: 2rem;
   background-color: brown;
 }

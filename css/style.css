@@ -1,0 +1,25 @@
+body {
+  background-color: #191919;
+}
+header {
+  background-color: #e4e4e4;
+  width: 96%;
+  height: 100vh;
+  margin: 2% 0% 0% 0%;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav {
+  background-color: aqua;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+nav > ul > li {
+  align-items: center;
+}
+nav > ul > li > img {
+  width: 15%;
+  background-color: brown;
+}

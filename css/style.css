@@ -50,14 +50,15 @@ header {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   /* background-color: rgb(242, 0, 255); */
   position: relative;
 }
 .header-content > article > h1,
 h3,
 h2,
-p {
+p,
+a {
   margin: 1rem;
 }
 .header-content > article {
@@ -71,7 +72,14 @@ p {
 a {
   margin-top: 1rem;
   color: #191919;
+  color: #333333;
   text-decoration: none;
+}
+.header-content > article > h2 {
+  color: #636363;
+  letter-spacing: 0.5rem;
+  margin-top: 0.2rem;
+  white-space: nowrap;
 }
 .header-content > article > h1 {
   font-size: 3.9rem;
@@ -85,7 +93,7 @@ a {
   color: #315b8a;
 }
 .header-content > article > h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 .header-content > .header-pic {
@@ -102,9 +110,9 @@ a {
   background-size: cover;
   filter: grayscale(100%);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   overflow: hidden;
-  transition: all 1s ease-in;
+  transition: all 0.5s ease-in-out;
 }
 
 .header-content > .header-pic > .pic:hover {
@@ -133,4 +141,19 @@ a {
   /* background-color: #e4e4e4; */
   text-align: center;
   transform: rotate(90deg);
+}
+
+.btn {
+  background-color: #315b8a;
+  width: 25%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  background-color: #333333;
+  letter-spacing: 1px;
 }

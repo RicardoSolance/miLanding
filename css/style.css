@@ -46,7 +46,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   /* background-color: rgb(243, 252, 79); */
-  display: none;
+  /* display: none; */
 }
 .header-content {
   /* background-color: rgb(255, 0, 212); */
@@ -162,9 +162,9 @@ a {
   background-color: #315b8a;
   letter-spacing: 1px;
 }
-/* ----------------------------------------------------------------main----------------------------------------------------------- */
+/* ----------------------------------------------------------------#about-section----------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------- */
-main {
+#about-section {
   background-color: #191919;
   width: 96%;
   height: 100vh;
@@ -172,9 +172,10 @@ main {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  /* display: none; */
   flex-wrap: wrap;
 }
-main > .about {
+#about-section > .about {
   flex: 50%;
   width: 100%;
   /* background-color: #315b8a; */
@@ -182,21 +183,22 @@ main > .about {
   flex-direction: column;
   justify-content: centerS;
 }
-main > .about > h3 {
+.section-h3 {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 50px;
   font-weight: bold;
-  color: #e4e4e4;
+  color: #ffffff;
+  mix-blend-mode: difference;
 }
-main > .about > p {
+#about-section > .about > p {
   text-align: center;
   font-size: 1rem;
   line-height: 1.5rem;
   color: #e4e4e4;
 }
-main > .about > blockquote {
+#about-section > .about > blockquote {
   text-align: center;
   line-height: 1.5rem;
   color: #e4e4e4;
@@ -210,7 +212,7 @@ main > .about > blockquote {
   color: #315b8a;
   text-decoration: 1.5px underline white;
 }
-main > .skills {
+#about-section > .skills {
   flex: 50%;
   width: 100%;
   background-color: #191919;
@@ -218,7 +220,7 @@ main > .skills {
   justify-content: center;
   align-items: center;
 }
-main > .skills > .tec {
+#about-section > .skills > .tec {
   /* background-color: #ffffff; */
   width: 100%;
   height: 96%;
@@ -232,7 +234,61 @@ main > .skills > .tec {
   width: 33%;
   /* margin: 0.5%; */
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .tecBox:nth-child(7) {
-  width: 99.8%;
+  width: 99.7%;
 }
+.tecBox > i {
+  height: 5em;
+}
+/* --------------------------------------my work------------------------------------------ */
+/* ----------------------------------------------------------------------------------------- */
+.work {
+  background-color: #e4e4e4;
+  width: 96%;
+  height: 100vh;
+  /* margin: 2% 0% 0% 0%; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.workBox {
+  /* background-color: #315b8a; */
+  width: 90%;
+  height: 70%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.workBox > .work-pic {
+  width: 32%;
+  height: 100%;
+  background-color: #191919;
+}
+.work-pic {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  filter: grayscale(110%);
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.71);
+}
+.work-pic:hover {
+  filter: grayscale(10%);
+  cursor: pointer;
+}
+.work-pic:nth-child(1) {
+  background-image: url(../assets/img/web.png);
+}
+.work-pic:nth-child(2) {
+  background-image: url(../assets/img/AWARDS.png);
+}
+.work-pic:nth-child(3) {
+  background-image: url(../assets/img/eslabon.png);
+}
+/* ------------------------------------Contact----------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */

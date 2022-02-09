@@ -390,3 +390,26 @@ footer {
 .social > a:hover :nth-child(3) {
   color: #833ab4;
 } */
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------------------B I O G R A F I A ---------------------------------------------------------- */
+header > .bio {
+  display: flex;
+  background-color: #e26b6b;
+  height: 90vh;
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.content > .bio-pic {
+  flex: 50%;
+  width: 100%;
+  height: 88vh;
+  background-color: #e26b6b;
+  background-image: url(../assets/img/pic.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}

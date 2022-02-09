@@ -240,6 +240,9 @@ a {
 .tecBox:nth-child(7) {
   width: 99.7%;
 }
+.tecBox > a {
+  font-size: 3.5rem;
+}
 .tecBox > i {
   height: 5em;
 }
@@ -326,6 +329,7 @@ a {
 #contact > form > textarea {
   color: #191919;
   margin-top: 2em;
+  background-color: #191919;
 }
 #contact > form > input:focus,
 textarea:focus {
@@ -345,3 +349,44 @@ textarea:focus {
   background-color: #315b8a;
   color: #e4e4e4;
 }
+#contact > form > select {
+  background-color: #191919;
+  color: #e4e4e4;
+}
+#contact > form > select:focus {
+  outline: none;
+}
+footer {
+  width: 96%;
+  height: 30%;
+  /* background-color: aqua; */
+  margin-top: 2rem;
+  color: #d8d8d841;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social {
+  /* background-color: #da3636; */
+  width: 30%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social > a {
+  font-size: 2.5rem;
+  color: #e4e4e4;
+  transition: all 0.5 ease-in-out;
+}
+/* .social > a :hover:nth-child(1) {
+  color: #4267b2;
+}
+.csocial > a :nth-child(2) :hover {
+  olor: #0077b5;
+}
+.social > a:hover :nth-child(3) {
+  color: #833ab4;
+} */

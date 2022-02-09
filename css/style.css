@@ -2,6 +2,7 @@ body {
   background-color: #191919;
   font-family: "Bebas Neue", cursive;
   font-family: "Space Mono", monospace;
+  scroll-behavior: smooth;
 }
 /* ------------------------------------------------------Nav---------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------- */
@@ -12,6 +13,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 nav > ul {
   /* line-height: 3.2rem; */
@@ -47,6 +49,7 @@ header {
   margin-right: auto;
   /* background-color: rgb(243, 252, 79); */
   /* display: none; */
+  overflow: hidden;
 }
 .header-content {
   /* background-color: rgb(255, 0, 212); */
@@ -163,6 +166,56 @@ a {
   background-color: #315b8a;
   letter-spacing: 1px;
 }
+
+.navegacion {
+  background-color: #191919;
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  width: 30rem;
+  height: 40em;
+  margin: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navegacion > li {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2%;
+  /* height: 20%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navegacion > li > a {
+  text-align: center;
+  width: 100%;
+  padding: auto;
+  font-size: 3em;
+  color: #e4e4e4;
+  transition: all 0.5s ease-out;
+}
+.navegacion > li > a:hover {
+  color: #636363;
+}
+.navegacion > .fa-xmark {
+  color: #e4e4e4;
+  font-size: 3rem;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  cursor: pointer;
+}
+@keyframes animar-menu {
+  from {
+    right: -100;
+  }
+}
+
 /* ----------------------------------------------------------------#about-section----------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------- */
 #about-section {
@@ -499,7 +552,7 @@ header > .bio {
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 590px) {
   .header {
     width: 100vw;
   }

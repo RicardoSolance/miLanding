@@ -43,7 +43,7 @@
     <section id="about-section">
         <div class="about">
             <h3 class="section-h3">About</h3>
-            <p>Having worked with clients on web projects from ideation
+            <p class="parragrafo">Having worked with clients on web projects from ideation
                 to launch, I have valuable experience in the
                 design and development process. I've worked with agencies
                 such as<a class="anchor" href="https://agencia-ecoar.com/">Ecoar-Agência</a>(Portugal), developed marketing sites for 
@@ -54,7 +54,7 @@
                     Like any self-respecting developer, if the code gets complicated, I know who to go to.<br>
                     Muslims have the MECA, developers have <br> <a class="anchor" href="https://stackoverflow.com/">Sain StackOverflow.</a> 
                 </blockquote>
-            <p>This is all i need to materialize ideas <a  class="fas fa-arrow-right anchor"></a> </p>
+            <p class="parragrafo">This is all i need to materialize ideas <a  class="fas fa-arrow-right anchor"></a> </p>
         </div>
         <div class="skills">
             <div class="tec">
@@ -73,7 +73,7 @@
     </section>
     <div class="work">
         <h3 class="section-h3 ">My work</h3>
-        <p>These are one of the many "projects" that will never see the light</p>
+        <!-- <p>These are one of the many "projects" that will never see the light</p> -->
         <div class="workBox">
           
             <div class="work-pic">
@@ -88,9 +88,41 @@
             
         </div>
     </div>
-    <section>
-        
+    <section id="contact">
+        <h3 class="section-h3">Get in touch</h3>
+        <p class="parragrafo">we both know the skills of our Cybersecurity friends,<br>I am not going to expose myself by leaving my email visible.<br> contact me through this form</p>
+        <form action="">
+            <!-- <label for="name">What is your name</label> -->
+            <input type="text" name="" id="name" placeholder="Place your name" maxlength="16">
+
+            <!-- <label for="email">What is your Email</label> -->
+            <input type="email" name="email" id="email" placeholder="Your Spam Address" required>
+
+            <!-- <label for="password">Feel free to test that i´m undersatndig forms in html "password"</label> -->
+            <input type="password" name="password" id="password" placeholder="test any thing">
+            <!-- <label for="gender">Your gender</label> -->
+            <!-- <div class="gender">
+                <input type="radio" name="gender" id="gender-man" >Adan
+                <input type="radio" name="gender" id="gender-woman">Eva
+            </div> -->
+            <label for="level">Whats your current status</label>
+            <select name="level" id="level">
+                <option value="Junior">Junior</option>
+                <option value="mid-senior">mid-senior</option>
+                <option value="senior">senior</option>
+                <option value="Principal">Principal</option>
+                <option value="C.E.O">C.E.O</option>
+                <option value="Elon">Elon Musk status</option>
+            </select>
+
+            <textarea name="msg" id="mensaje" cols="60" rows="10" placeholder="No Love letters allowed"> </textarea>
+            
+            <input type="submit" value="submit" id="btn-submit">
+        </form>
     </section>
+    <footer>
+        <p>Dev by Ricardo Solance</p>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.js" integrity="sha512-RbP5+vWnJXWlhYAeHPXGcUHCKAurbkp73RTk7aQZyJw/KeTAQwt1iP6Zt0JFLk0tHdZsu4VqRu0WD+jLqmfyNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

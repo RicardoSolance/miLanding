@@ -57,7 +57,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   /* background-color: rgb(242, 0, 255); */
-  position: relative;
+  /* position: relative; */
 }
 .header-content > article > h1,
 h3,
@@ -104,7 +104,9 @@ a {
 .header-content > .header-pic {
   display: flex;
   flex: 50%;
+  height: 90%;
   overflow: hidden;
+  /* background-color: #315b8a; */
 }
 .header-content > .header-pic > .pic {
   /* width: 50%; */
@@ -114,7 +116,7 @@ a {
   background-size: cover;
   filter: grayscale(100%);
   background-repeat: no-repeat;
-  /* background-size: 100%; */
+  background-size: 100%;
   /* overflow: hidden; */
   transition: all 0.5s ease-in-out;
 }
@@ -494,5 +496,49 @@ header > .bio {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .header {
+    width: 100vw;
+  }
+  .header-content {
+    font-size: -50%;
+    height: calc(100vh - 3.5rem);
+    background-color: #315a8a25;
+  }
+  .header-content > article {
+    width: 100%;
+    height: 70%;
+  }
+  .header-content > article > h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    white-space: wrap;
+    letter-spacing: 0.3em;
+    margin-left: 0.8rem;
+  }
+  .header-content > .header-pic > #mern {
+    /* background-color: #315b8a; */
+    height: 30%;
+    overflow: hidden;
+  }
+
+  #about-section > .skills {
+    width: 100%;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .workBox > .work-pic {
+    margin-bottom: 2%;
+    height: 300px;
+  }
+
+  form {
+    width: 90vw;
   }
 }

@@ -176,7 +176,7 @@ a {
   height: 40em;
   margin: 0;
   z-index: 5;
-  display: flex;
+  /* display: block; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -190,6 +190,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.activado {
+  display: flex;
 }
 .navegacion > li > a {
   text-align: center;
